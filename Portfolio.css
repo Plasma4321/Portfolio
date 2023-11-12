@@ -1,143 +1,155 @@
+body {
+  background: url('outerspace.jpg') ; 
+  margin: 0px;
+}
 
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            color: #000000;
-            margin: 0;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0px 15px;
-        }
+nav {
+    display: flex; /* For Horizontally */
+    justify-content: space-between;/* There will be a gap between new contents */
+    align-items: center; /* Centre of the navigation section */
+    padding: 0px 15px;/* UD LR */
+}
+a.buttonanchor{
+    color: #0ff;
+    text-decoration: none;
+}
+a.buttonanchor:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+}
+a.buttonanchor:hover .Nezokoimage {
+  visibility: visible;
+}
+button {
+  font-size: 1.5em;            
+  padding: 10px 15px; /* UD LR */
+  color: #0ff;  /* Color of button text */
+  border: none;        
+  border-radius: 20px;    /*Kinda Rounded Button */
+  background: #000; /*Button Skin Color */
+  box-shadow: 0 2px 10px #0ff; /*Shift of shadow H-Shift V-Shift BlurSizeOfShadow, the more number of times i repeat the more darker the color */
+}
 
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
+button:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+}
 
-        nav li {
-            margin: 0 20px;
-        }
+.Nezokoimage{
+  visibility: hidden;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #000000;
-            font-weight: bold;
-            font-size: 20px;
-        }
+button:active,button.active {
+    background: #ff0;
+      color: #000;
+      box-shadow: 0 0 5px #ff0, 0 0 15px #ff0, 0 0 25px #ff0, 0 0 35px #ff0;
+}
+.neontxt {
+    color: #ffffff;
+    text-shadow:
+    0 0 5px #ff00de,
+    0 0 10px #ff00de,
+    0 0 15px #ff00de,
+    0 0 20px #ff00de,
+    0 0 25px #ff00de,
+    0 0 30px #ff00de,
+    0 0 35px #ff00de;
+}
+.neontxt2{
+    color: #ffffff;
+    text-shadow:
+    0 0 5px #ff0,
+    0 0 10px #ff0;
+}
+.Firsttext{
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 700px;
+    text-align: center;
+    align-items: center; /* Centre of the section */
+   
+}
+.Secondtext{
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 700px;
+    text-align: center;
+    align-items: center;
+}
+.Thirdtext{
+    
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+}
+.Fourthtext{
+    
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+}
+.Fifthtext{
+    font-size: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+}
+.social-box {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+.social-icon {
+    font-size: 30px;
+    color: #fff;
+    margin: 0 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+@media (max-width: 600px) {
+  .Nezokoimage {
+    width: 50px;
+    height: 50px;
+  }
+  h1{
+    font-size: 50px;
+  }
+  h2{
+    font-size: 40px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  p{
+    font-family: 'Barlow', sans-serif;
+  }
+  .Firsttext{
+    margin: 0;
+    padding: 0;
+    display: block; /* For Vertical */
+  }
+  .Secondtext{
+    height: 1000px;
+  }
+  .Thirdtext{
+    height: 800px;
+  }
 
-        .TAKEACT {
-            margin: 0 20px;
-        }
-
-        .TAKEACT a {
-            background-color: #361e0e;
-            border-radius: 20px;
-            padding: 10px;
-            color: #fff;
-            font-weight: bold;
-        }
-        .content {
-            padding: 80px;
-            margin-top: 20px;
-        }
-
-        .custom-button {
-            background-color: #361e0e;
-            border-radius: 20px;
-            padding: 10px 20px;
-            color: #fff;
-            font-weight: bold;
-            font-size: 16px;
-            display: block;
-        }
-        header {
-            background-image: url('Dodge Coin Icon.jpg'); 
-            background-size: cover;
-            background-position: center;
-            border-radius: 5px;
-            text-align: center;
-            padding: 2px;
-            
-        }
-
-        h1{
-            color: rgb(152, 6, 6);
-            font-size: 50px;
-        }
-        h2{
-            color: rgb(255, 255, 255);
-            font-size: 40px;
-        }
-        .BONK{
-            color: rgb(38, 0, 255);
-            border-radius: 20px;
-            padding: 20px;
-            font-size: 20px;
-        }
-        .title{
-            text-align: center;
-            padding-top: 30px;
-            font-size: 20px;
-        }
-        .inside{
-            text-align: center;
-            padding-top: 15px;
-            margin-left: 200px;
-            margin-right: 200px;
-            font-style: italic;
-        }
-        .finish{
-            text-align: center;
-            padding-top: 15px;
-        }
-        .image-container {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .image-box {
-            text-align: center;
-            width: 48%; 
-            margin: 10px; 
-        }
-
-        .image-box img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .image-box h3 {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-        .image-box p {
-            font-size: 16px;
-            text-align: center;
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-        .social-box {
-            background-color: #333;
-            text-align: center;
-            padding: 20px 0;
-            margin: 0;
-        }
-
-        .social-icon {
-            font-size: 30px;
-            color: #fff;
-            margin: 0 20px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .powered-by {
-            text-align: center;
-            background-color: #000000;
-            color: #fff;
-            padding: 20px 0;
-            font-size: 20px;
-            margin: 0; 
-        }
+}
